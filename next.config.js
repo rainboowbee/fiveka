@@ -1,6 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  experimental: {
+    appDir: true,
+  },
+  trailingSlash: false,
+  async redirects() {
+    return [];
+  },
+  async rewrites() {
+    return [];
+  },
 };
 
 module.exports = nextConfig;
